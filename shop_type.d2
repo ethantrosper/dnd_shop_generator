@@ -1,0 +1,76 @@
+""" d2 --dark-theme=200 -w shop_type.d2 out.svg """
+Shop: {
+}
+
+item: {
+    item_type
+    price
+}
+
+Magic_items: {
+    shape: class
+    name: string
+    item_description: string
+    price: int
+    price_description: string
+    rarity: string
+    attunment: bool
+    item_type: string
+    item_class: string
+}
+General_Weapons: {
+    shape: class
+    die_type: int
+    die_amount: int
+    damage_type: string
+    properties: string
+    weight: int
+}
+
+armor: {
+    shape: class
+    name: string
+    armor_type: string
+    armor_class: string
+    strength_requirement: int
+    weight: int
+    armor_ac: int
+    dex_modifier: bool
+    max_dex_modifier: int
+    stealth_disadvantage: bool
+}
+
+General_goods: {
+    shape: class
+    name: string
+    price: int
+    item_description: string
+    weight: int
+}
+
+Tool_kits: {
+    shape: class
+    name: string
+    price: int
+    weight: int
+}
+
+potion: {
+    shape: class
+    name: string
+    price: int
+    rarity: string
+    description: string
+}
+
+poison: {
+    shape: class
+    name: string
+    price: int
+    posion_type: string
+    description: string
+    dc_save: int
+}
+
+Shop.item -> item
+
